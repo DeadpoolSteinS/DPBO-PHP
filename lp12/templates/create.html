@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">WIW</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container">
+        <h3 class="text-center">Form Data</h3><br>
+        <form action="create.php?UPDATE_LINK" method="post">
+            <div class="row mb-3">
+              <label for="nik" class="col-sm-2 col-form-label">NIK</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" id="nik" name="nik" value="NIK_VALUE">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="nama" name="nama" value="NAMA_VALUE">
+              </div>
+            </div>
+            <div class="row mb-3">
+                <label for="tempat" class="col-sm-2 col-form-label">Tempat</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="tempat" name="tempat" value="TEMPAT_VALUE">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="tl" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                <div class="col-sm-10">
+                  <input type="date" class="form-control" id="tl" name="tl" value="TL_VALUE">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-sm-2 col-form-label">Gender</label>
+                <div style="padding: 0 15px;" class="d-flex align-items-center">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="laki-laki" value="Laki-laki" LAKI-LAKI_VALUE>
+                        <label class="form-check-label" for="laki-laki">
+                        Laki-laki
+                        </label>
+                    </div>
+                    <div class="form-check ml-4">
+                        <input class="form-check-input" type="radio" name="gender" id="perempuan" value="Perempuan" PEREMPUAN_VALUE>
+                        <label class="form-check-label" for="perempuan">
+                        Perempuan
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="email" name="email" value="EMAIL_VALUE">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="telp" class="col-sm-2 col-form-label">No Telp</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="telp" name="telp" value="TELP_VALUE">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
